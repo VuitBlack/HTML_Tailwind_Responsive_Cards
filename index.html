@@ -7,51 +7,53 @@
     <title>Página HTML Estándar</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./Assets/Images/favicon.png">
     <link href="/src/output.css" rel="stylesheet">
+    <title>Rating Website</title>
 </head>
 
-<body>
-    <header>
-        <h1 class="bg-yellow-200 text-3xl font-bold underline text-red-500">Rating website
-        </h1>
-    </header>
+<body class="bg-Azul-Muy-Oscuro text-white font-Overpass h-screen grid place-content-center">
     <main> 
-        <div>
-            <div>
-                <img src="./Assets/Images/icon_star.png" alt="Icono Star" max-width="10px">
+        <div class="gradient-background w-[347px] rounded-2xl p-4">
+            <div class="bg-Azul-Oscuro w-10 h-10 rounded-full grid place-content-center mb-4">
+                <img src="./Assets/Images/icon_star.png" alt="Icono Star">
             </div>
 
-            <h2>Nos das tu opinión?</h2>
+            <h2 class="text-2xl mb-2">¿Nos das tu opinión?</h2>
 
-            <p>Puedes puntuar del 1 al 5 la calidad de nuestro servicio técnico. Todos los feedback son importantes para nosotros y nos ayudan a mejorar.</p>
+            <p class="text-Gris-Claro mb-6">Puedes puntuar del 1 al 5 la calidad de nuestro servicio técnico. Todos los feedback son importantes para nosotros y nos ayudan a mejorar.</p>
 
-            <div>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
+            <!-- La clase "circle" la he creado como una componente dentro de input.css -->
+            <div class="flex place-content-between mb-6">
+                <button class="circle">1</button>
+                <button class="circle">2</button>
+                <button class="circle">3</button>
+                <button class="circle">4</button>
+                <button class="circle">5</button>
             </div>
 
-            <button>Submit</button>
+            <button class="bg-Naranja w-full rounded-[22px] h-[45px] uppercase text-Azul-Muy-Oscuro font-bold text-[14px] tracking-widest hover:bg-white cursor-pointer">Submit</button>
         </div>
 
-        <div>
-            <div>
-                <img src="./Assets/Images/icon_rating.jpg" alt="Icono Rating">
+        <div class="gradient-background w-[347px] rounded-2xl p-4 hidden">
+            <div class="flex justify-center mb-6">
+                <img class="w-[150px]" src="./Assets/Images/icon_rating.png" alt="Icono Rating">
             </div> 
 
-            <p>Nos has calificado con <span>4</span> de 5 estrellas</p>
+            <div class="flex justify-center mb-6">
+            <p class="bg-Azul-Oscuro rounded-[22px] inline-block px-3 py-2 text-Naranja">Nos has calificado con <span>4</span> de 5 estrellas</p>
+            </div>
 
-            <h2>Muchas gracias!</h2>
-            
-            <p>Gracias por tu feedback. Agradecemos el tiempo que has dedicado a calificar nuestro servicio técnico esperamos que haya cumplido tus expectativas. Si tienes alguna otra sugerencia, no dudes en contactarnos.</p>
+            <h2 class="text-center text-2xl mb-10">Muchas gracias!</h2>
+        
+            <p class="text-center text-Gris-Claro">Agradecemos tu feedback y el tiempo que has dedicado a calificar nuestro servicio técnico esperamos que haya cumplido tus expectativas.</br>Si tienes alguna otra sugerencia, no dudes en contactar con nosotros.</p>
 
         </div>
 
     </main>
-    <footer>
-        <p class="bg-rosa">&copy; 2025 Desarrollado con Html y Tailwind </p>
-    </footer>
 </body>
+
+<footer>
+    <p class="bg-Gris-Claro mt-6">&copy; 2025 Desarrollado con Html y Tailwind </p>
+</footer>
+
 </html>
 
